@@ -15,6 +15,7 @@ on:
     branches: [main, master]
     paths:
       # 只有代码文件和工作流配置变更时才触发AI代码审查
+      - '**/*.md'
       - '**/*.py'
       - '**/*.js'
       - '**/*.ts'
@@ -32,6 +33,7 @@ permissions:
   contents: read
   pull-requests: write
   checks: write
+  id-token: write
 
 jobs:
   ai-code-review:
