@@ -15,6 +15,7 @@ on:
     branches: [main, master]
     paths:
       # 只有代码文件和工作流配置变更时才触发AI代码审查
+      - '**/*.md'
       - '**/*.py'
       - '**/*.js'
       - '**/*.ts'
